@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+  <g id="Group_15" data-name="Group 15" transform="translate(-366 -797)">
+    <g id="Group_14" data-name="Group 14">
+      <g id="Rectangle_34" data-name="Rectangle 34" transform="translate(366 797)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="31" height="31" stroke="none"/>
+        <rect x="0.5" y="0.5" width="30" height="30" fill="none"/>
+      </g>
+    </g>
+    <g id="tick" transform="translate(377.25 440.999)">
+      <g id="Group_8" data-name="Group 8" transform="translate(-6 361.997)">
+        <path id="Path_61" data-name="Path 61" d="M20.2,68.376a.883.883,0,0,0-1.45,0L6.47,83.878l-4.72-5.958a.883.883,0,0,0-1.45,0,1.544,1.544,0,0,0,0,1.83l5.445,6.873a.883.883,0,0,0,1.45,0l13-16.416A1.544,1.544,0,0,0,20.2,68.376Z" transform="translate(0 -67.997)" fill="red"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,155 @@
+.inputContainer svg,
+img {
+  width: 2vw;
+}
+
+.inputContainer {
+  /* height: auto; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+
+  border: 1px solid black;
+}
+
+.title {
+  color: white;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.titleLight {
+  background-color: var(--NavBar-color);
+}
+.titleDark {
+  background-color: var(--NavBar-dark-color);
+}
+.selectAllCheckBox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #bcbcbc;
+  cursor: pointer;
+}
+
+.selectAllCheckBoxTitle {
+  position: relative;
+  bottom: 4px;
+}
+
+.mainTodo {
+  background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0.75vw;
+}
+.miniTodo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5vw;
+  padding-left: 3vw;
+}
+.lessThan5 {
+  background-color: green;
+  opacity: 0.4;
+}
+.lessThanHour {
+  background-color: yellow;
+  opacity: 0.4;
+}
+.moreThanHour {
+  background-color: red;
+  opacity: 0.4;
+}
+.label {
+  flex-basis: 95%;
+  display: flex;
+  align-items: center;
+}
+.label svg:hover {
+  /* transition: all 0.5s; */
+  border: 2px solid black;
+}
+.labelMini {
+  flex-basis: 5%;
+  display: flex;
+  align-items: center;
+}
+.labelMini svg:hover {
+  /* transition: all 0.5s; */
+  border: 2px solid black;
+}
+.miniTodo label {
+  flex-basis: 5%;
+}
+.miniTodo form {
+  flex-basis: 90%;
+}
+.miniTodo form input {
+  width: 100%;
+
+  overflow-wrap: break-word;
+  text-align: left;
+  padding: 0 1rem;
+  color: inherit;
+  font-size: var(--content-size);
+}
+
+.taskItemContent {
+  width: 0;
+  flex: 1;
+  overflow-wrap: break-word;
+  text-align: left;
+  padding: 0 1rem;
+  color: inherit;
+  font-size: var(--content-size);
+}
+
+.deleteBtn,
+.addBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex-basis: 4%;
+}
+.addBtn:hover {
+  background: whitesmoke;
+  transition: all 0.5s;
+  border-radius: 10px;
+  /* box-shadow: 0px 6px 15px #0000ff61; */
+  padding: 0.01rem;
+  color: #ffffff;
+}
+.taskContainer {
+  border: 0.5px solid black;
+}
+.add .taskContainer:nth-child(even),
+.miniTodo:nth-child(even) {
+  background-color: var(--light-grey);
+  /* background-color: white; */
+}
+
+.deleteBtn:hover {
+  transition: all 0.5s;
+  fill: var(--NavBar-color);
+}
+.finished {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.mainTodo:hover,
+.miniTodo:hover {
+  opacity: 0.6;
+  color: var(--dark-purple);
+}
+
+.taskContainer input[type="checkbox"] {
+  display: none;
+}
+.hideBtn {
+  display: none;
+}
