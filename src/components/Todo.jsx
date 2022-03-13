@@ -10,6 +10,7 @@ function Todo(props) {
   const [taskList, setTaskList] = useState([]);
   useEffect(() => {
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    console.log("asdasdasdasdasdasd", currentUser);
     setTaskList(currentUser.taskList);
   }, []);
 

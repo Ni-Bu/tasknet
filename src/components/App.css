@@ -27,10 +27,10 @@ html {
   --title-two: "Ubuntu", sans-serif;
 
   /* size */
-  --large-size: 3vw;
-  --medium-size: 2vw;
-  --content-size: 1.5vw;
-  --small-size: 1vw;
+  --large-size: clamp(3rem, 4vw, 5rem);
+  --medium-size: clamp(2rem, 2vw, 4rem);
+  --content-size: clamp(1rem, 1.5vw, 3rem);
+  --small-size: clamp(0.5rem, 1vw, 2rem);
 }
 nav {
   flex-basis: 8%;
@@ -39,6 +39,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+  width: 100%;
 }
 .navLight {
   background-color: var(--NavBar-color);
@@ -88,19 +89,22 @@ nav {
   display: none;
 }
 .input-container {
-  background-color: inherit;
+  /* background-color: inherit; */
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 2vw;
+
+  width: 60%;
+  gap: 1rem;
 }
 
 .input-container input {
   background-color: inherit;
   color: black;
-  flex-basis: 85%;
-  height: 5vw;
+  /* flex-basis: 85%; */
+  /* height: 5vw; */
+  width: 100%;
   border: none;
   border-bottom: 1px solid grey;
   font-family: var(--input-username);

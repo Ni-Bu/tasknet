@@ -15,6 +15,7 @@ function SignUp(props) {
     email: "",
     password: "",
     confirmPassword: "",
+    taskList: [],
   });
 
   const handleSubmit = (e) => {
@@ -22,7 +23,10 @@ function SignUp(props) {
     console.log("user", user);
     const response = auth.register(user);
     if (response !== "failed") {
+      console.log("response omegalul", user);
+      localStorage.setItem("currentUser", JSON.stringify(user));
       toast.success("registered Successfully");
+      //  error is here, save the data into local storage here!!!!!!
       window.location = "/todo";
     } else {
       toast.error("Invalid Email or Password");

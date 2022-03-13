@@ -18,7 +18,6 @@ function Login(props) {
     const response = auth.login(currentUser);
 
     if (response) {
-      console.log(response);
       setCurrentUser(response);
       localStorage.setItem("currentUser", JSON.stringify(currentUser));
       toast.success("Logging In");
